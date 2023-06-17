@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>寫輪眼</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		.di{
+			
+			width: 80%;
+			min-height: 500px;
+			margin: auto;
+			background: linear-gradient(to right, #eecda3, #ef629f);
+			
+			padding-top: 30px;
+		}
+		#sec{
+			width: 400px;
+			min-height: 400px;
+			background:url("500081-1.jpg"); 
+			margin: 0 auto;
+			border-radius: 100%;
+			transition: all 2s ease-out;
+			box-sizing: content-box;
+			/*position:relative;*/
+
+			
+		}
+		.i{
+			height: 200px;
+			
+		}
+		img{
+			
+			max-width: 100%;
+		}
+
+		#sec:hover{
+			transform: scale(1.2,1.2);
+			/*transform: rotate(108000deg);*/
+		}
+		.d2{
+			/*background: blue;*/
+			width: 134px;
+			height: 134px;
+			display: flex;
+			justify-content: center;
+			/*transition: all 2s ease-out;*/
+			border-radius: 100%;
+			margin: 0 auto;
+			/*padding-top:200px; */
+			/*overflow: hidden;*/
+		}
+		/*.d2:hover{
+			transform: rotate(-1080deg);
+		}*/
+		.ck{
+
+			position: relative;
+			transition: all 23s ease-out;
+			border-radius: 100%;
+			width: 134px;
+			height: 134px;
+			background:url("sleye3-1.jpg");
+			background-position: center ; 
+			margin-top: 134px;
+		}
+		.ck:hover{
+
+			/*transform:scale(1.2,1.2);*/
+			transform: rotate(-108000deg);
+			/*transform: matrix(1, 2, 3, 4, 5, 6);*/
+		}
+
+
+		.boxxx {
+		    width:300px;
+		    height:300px;
+		    background-color: #ff2324;
+		    margin:15px;
+		    padding:5px;
+		    color: #fff
+		}
+		.transition {
+			float: right;
+		    transition: all 1s;
+		}
+
+		.hidden {
+		    opacity: 0;
+		}
+
+		.triggers:hover ~ .hidden {
+		    opacity: 1;
+		    transform: scale(1.2,1.2);
+		}
+
+		.triggers:hover ~ .show {
+		    opacity: 0;
+		    transform: rotate(360deg);
+		}
+		.fggfg{
+			display: flex;
+
+		}
+
+		.ddd1:hover ~ .ddd2{
+			color: blue;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="di">
+		<section id="sec">
+			<div class="d2">
+				<section class="ck">
+					
+				</section>
+			</div>
+		</section>
+	</div>
+	<div class="fggfg">
+		<div class="triggers boxxx">Trigger</div>
+		<div class="hidden boxxx transition">fade in</div>
+		<div class="show boxxx transition">to hide</div>
+	</div>
+	<div class="ddd1">fff</div>
+	<div class="ddd2">fff</div>
+	
+	
+	
+	
+</body>
+</html>
+<!-- <img src="C:\Users\User\OneDrive\圖片\IMG20190616110334.jpg" class="i"> -->

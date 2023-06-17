@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		.wdiv{
+			height: 400px;
+			display: flex;
+		}
+		.box{
+			margin: 10px;
+			width: 300px;
+			height: 300px;
+			background:red;
+		}
+		.ldiv{
+			height: 400px;
+			display: flex;
+		}
+		.box1{
+			margin: 10px;
+			width: 300px;
+			height: 300px;
+			background:red;
+		}
+	</style>
+	<script>
+		function over(a,s){
+			if(s==1){
+				a.style.background="yellow"
+			}
+			else if(s==2){
+				a.style.background="blue"
+			}
+			else if(s==3){
+				a.style.background="gray"
+			}
+			else if(s==4){
+				a.style.background="green"
+			}
+			else if(s==5){
+				a.style.background="black"
+			}
+			else if(s==6){
+				a.style.background="pink"
+			}
+			
+		}
+		// function out(b){
+		// 	b.style.background="blue"
+		// }
+		function overs(k,color){
+			k.style.background=color
+		}
+	</script>
+		}
+</head>
+<body>
+	<div class="wdiv">
+		<div class="box" onmouseover="over(this,1)" onmouseout="over(this,2)"></div>
+		<div class="box" onmouseover="over(this,3)" onmouseout="over(this,4)"></div>
+		<div class="box" onmouseover="over(this,5)" onmouseout="over(this,6)"></div>
+	</div>
+	<div class="ldiv">
+		<div class="box1" onmouseover="overs(this,'yellow')" onmouseout="overs(this,'blue')"></div>
+		<div class="box1" onmouseover="overs(this,'gray')" onmouseout="overs(this,'green')"></div>
+		<div class="box1" onmouseover="overs(this,'black')" onmouseout="overs(this,'pink')"></div>
+	</div>
+	
+</body>
+</html>

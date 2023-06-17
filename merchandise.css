@@ -1,0 +1,374 @@
+body{
+	margin:  0 auto;
+	background: #f6f6f6;
+}
+img{
+	max-width: 100%;
+}
+.head-d{
+	width: auto;
+	height: 125px;
+	background: #d0011b;
+
+}
+.head-con{
+	display: flex;
+	margin: 0 auto;
+	height: 35px;
+	/*background: yellow;*/
+	width: 80%;
+}
+/*a-tag*/
+.head-a{
+	color: white;
+	/*font-size: 15px;*/
+	text-decoration: none;
+}
+.head-a:hover{
+	color: pink;
+}
+/*置中*/
+.head-h51{
+	font-size: 13px;
+	margin: 0;
+	padding-top: 8px;
+}
+.headcon-right{
+	width: 50%;
+	float: right;
+	/*background: red;*/
+}
+/*註冊*/
+.head-h52{
+	font-size: 13px;
+	/*text-align: right;*/
+	width: 35px;
+	margin: 0;
+	float: right;
+	padding-top: 8px;
+}
+.headcon-left{
+	width: 50%;
+	float: left;
+	text-align: right;
+	
+}
+/*登入*/
+.head-h53{
+	font-size: 13px;
+	width: 40px;
+	margin: 0;
+	float: right;
+	text-align: center;
+	padding-top: 8px;
+	/*border-right: 1px solid;
+    border-right-color: red;*/
+
+}
+/*登入和註冊中的border-right*/
+#head-h53-a{  
+	padding-right: 8px;
+	height: 15px;
+	border-right: 1px solid;
+    border-right-color: pink;
+}
+.head-wrap{
+	display: flex;
+	width: 80%;
+	margin: 0 auto; 
+	/*background: green;*/
+	height: 90px;
+}
+.headwrap-left{
+	width: 50%;
+	float: left;
+}
+.headwrap-right{
+	display: flex;
+	width: 50%;
+	float: right;
+}
+.headwrap-form{
+	float: left;
+	width: 520px;
+	margin-top: 25px;
+}
+/*input{
+	padding-left: 15px;
+	outline: none;
+	border-radius: 2px;
+	width: 520px;
+	height: 40px;
+	border: none;
+}*/
+.form-control{
+	border-radius: 2px;
+	outline: none;
+	padding-left: 15px;
+	border: none;
+	height: 40px;
+	
+}
+#button-addon2{
+	background: #d0011b;
+	margin-top: 2px;
+	color: white;
+	outline: none;
+	width: 60px;
+	height: 36px;
+}
+/*搜尋button的div-class*/
+.s{
+	height: 40px;
+	width: 65px;
+	background: white;
+	border-radius: 2px;
+}
+.headwright-logo{
+	width: 60px;
+	/*background: red;*/
+}
+#hshopping-cart{
+	margin-left: 20px;
+	margin-top: 28px;
+}
+#cart-a{
+	color: white;
+}
+#sec-main{
+	margin-top: 50px;
+	height: 750px;
+	background: #f6f6f6;
+}
+.main-container{
+	height: 700px;
+	/*background: red;*/
+}
+.subcontainer{
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+	height: 700px;
+	background: #fff;
+}
+.sub-left{
+	/*background: green;*/
+	float: left;
+	width: 40%;
+}
+.sub-right{
+	/*background: yellow;*/
+	float: right;
+	width: 60%;
+}
+.subleft-con{
+
+	margin: 0 auto;
+	width: 92%;
+	height: 680px;
+	/*background: red;*/
+}
+.subleftcon-up{
+	height: 450px;
+	background: white;
+	margin-top: 16px;
+	background-image: url("https://cf.shopee.tw/file/be32478b7b7af9de7b9fb5cf9085fc04");
+	background-size: contain;
+}
+.subleftcon-down{
+	margin-top: 15px;
+	display: flex;
+	height: 96px;
+	width: 455px;
+}
+.subdown1{
+	background-image: url("https://cf.shopee.tw/file/cf3ce68c3aa98a87a17b795ab1d2cbb5_tn");
+	background-size: contain;
+	margin-right: 8px;
+	height: 82px;
+	width: 92px;
+}
+span{
+	margin-top: 450px;
+}
+.subright-con{
+	margin: 0 auto;
+	width: 92%;
+	height: 685px;
+	/*background: green;*/
+}
+.subrightcon-1{
+	height: 70px;
+	margin-top: 15px;
+}
+.subrightcon-2{
+	display: flex;
+	height: 40px;
+}
+.subrightcon2-1{
+	color: red;
+	margin-top: 5px;
+	width: 115px;
+}
+.subrightcon2-2{
+	margin-top: 6px;
+	width: 105px;
+}
+.subrightcon2-3{
+    margin-top: 7px;
+	width: 105px;
+}
+.subrightcon-3{
+	background-color: #f6f6f6;
+	display: flex;
+	height: 95px;
+}
+#subh2{
+	margin-top: 25px;
+}
+.subrightcon-4{
+	display: flex;
+	height: 110px;
+	/*background: #f66464;*/
+}
+.subcon4-left{
+	width: 20%;
+}
+.subcon4-right{
+	width: 80%;
+}
+.subright4down{
+	/*color: white;*/
+	margin-top: 25px;
+}
+.subrightcon-5{
+	display: flex;
+	height: 50px;
+}
+.subcon5-left{
+	margin-top: 5px;
+	width: 20%;
+}
+.subcon5-right{
+	width: 80%;
+}
+.subcon5-btn1{
+	margin-left: 5px;
+	width: 80px;
+	height: 34px;
+	border-radius: 2px;
+	background: white;
+	border:1px solid gray;
+	color: black;
+}
+.subrightcon-6{
+	display: flex;
+	height: 80px;
+}
+button{
+	background: white;
+	color: gray;
+	outline: none;
+	border: 1px solid;
+	width: 30px;
+	height: 31px;
+}
+.subcon6-left{
+	margin-top: 25px;
+	width: 20%;
+}
+.subcon6-right{
+	width: 80%;
+	display: flex;
+}
+.subcon6-div{
+	margin-top: 25px;
+	display: flex;
+	width: 115px;
+}
+#psub6{
+	margin-top: 27px;
+}
+.subcon6-btn1{
+	height: 30px;
+	width: 30px;
+	background: white;
+	border:1px solid gray;
+}
+.subcon6-inp{
+	text-align: center;
+	height: 25px;
+	min-width: 35px;
+	max-width: 35px;
+	outline: none;
+}
+.subrightcon-7{
+	height: 45px;
+}
+.subcon7-btn1{
+	margin-right: 15px;
+	color: red;
+	height: 45px;
+	width: 170px;
+	border-radius: 2px;
+	border:1px solid red;
+}
+.subcon7-btn2{
+	background: #d0011b;
+	color: white;
+	margin-right: 15px;
+	height: 45px;
+	width: 170px;
+	border-radius: 2px;
+	border:1px solid red;
+}
+.subcon7-btn1:hover{
+	color: white;
+	background: red;
+}
+.subcon7-btn2:hover{
+	background: #d0015f;
+}
+#sec-two{
+	display: flex;
+	width: 80%;
+	height: 3000px;
+	margin: 0 auto;
+	/*background: white;*/
+}
+.sectwo-left{
+	margin-right: 20px;
+	width: 75%;
+	background: white;
+}
+.sectwoleft-con{
+	margin: 0 auto;
+	width: 92%;
+}
+.sectwoleft-des{
+	margin: 0 auto;
+	height: 50px;
+	background: #f6f6f6;
+	margin-top: 30px;
+}
+#des-h4{
+	padding-top: 10px;
+	text-align: center;
+}
+#des1-h4{
+	padding-top: 10px;
+	text-align: center;
+}
+.sectwo-right{
+	width: 25%;
+	background: white;
+}
+#stwp{
+	margin-top: 10px;
+	text-align: center;
+}
+.sectworef{
+	height: 310px;
+	background: gray;
+	margin-top: 5px;
+}

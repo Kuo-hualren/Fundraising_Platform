@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		article{
+			
+			background: gray;
+			display: flex;
+		}
+		section{
+			width: 600px;
+			height: 200px;
+			/*margin: 10px;*/
+			background: blue;
+		}
+		#sec1{
+			background: red;
+			flex-basis: 500px;
+		}
+		#sec2{
+			background: green;
+			/*flex-shrink: 3;*/
+		}
+		#sec3{
+			background: blue;
+			/*flex-shrink: 2;*/
+		}
+	</style>
+
+</head>
+<body>
+	<article>
+		<section id="sec1">1</section>
+		<section id="sec2"></section>
+		<section id="sec3"></section>
+	</article>
+</body>
+</html>

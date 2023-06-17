@@ -1,0 +1,128 @@
+body{
+	margin: 0;
+}
+header{
+	background:coral;
+}
+header h1{
+	margin: 0;
+	color: white;
+	font-size: 1.6em;
+	line-height: 2em;
+}
+.container{
+	/*display: flex;*/
+	width: 80%;
+	margin: 0 auto;
+}
+nav{
+	background:#555;
+}
+nav li{
+	display: inline;
+}
+nav li a{
+	color: white;
+	text-decoration: none;
+	line-height: 1.8em;
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+nav li a:hover{
+	color: red;
+	cursor: crosshair;
+}
+#showcase{
+	min-height: 250px;
+	background:url("coral.jpg"); 
+	background-position: center right; 
+}
+#showcase h1{
+
+	color: white;
+	text-align: center;
+	font-size: 3em;
+	padding-top: 80px;
+}
+#main{
+	min-height: 300px;
+	display: flex;
+	margin-top: 20px;
+}
+article{
+	float: left; 
+}
+aside{
+	/*flex-grow: 5;*/
+	padding:50px 10px; 
+	float: right;
+	color: white;
+	background:#333333; 
+}
+p{
+	text-align: center;
+}
+footer{
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+	background:#333; 
+	line-height: 1.5em;
+	font-size: 1.5em;
+}
+article img{
+	max-width: 100%;
+	margin-right: 10px;
+}
+/*@media screen and (max-width: 922px) {
+	main{
+
+	}
+	.img{
+		max-width: 100%;
+	}
+
+}*/
+img{
+	max-width: 100%;
+}
+
+#sec{
+	margin-top: 20px;
+	margin: auto;
+	display: flex;
+	width: 80%;
+	max-height: 1550px;
+	justify-content: center;
+	flex-wrap: wrap;
+	/*background-color: red;*/
+}
+
+#ss{
+	margin: 5px;
+	/*max-height: 250px;*/
+	width: 233px;
+
+	background: white;
+}
+.upper{
+	background:blue; 
+	height: 175px;
+	transform:scale(1,1);transition: all 0.2s ease-out;
+}
+.upper:hover{
+	transform:scale(1.2,1.2);
+}
+.lower{
+	height: 100px;
+}
+#h{
+	text-align: center;
+	/*width: 310px; */
+}
+#o{
+	text-align: center;
+}
+#article{
+	margin-right: 10px;
+}

@@ -1,0 +1,424 @@
+<header>
+   #-------------------------------------------------------#新版
+    <nav class="navbar navbar-expand-lg" navbar-light>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="homepage.html">
+          <img src="stargg.jpg" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="explore.html"><strong>探索內容</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>會員註冊</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html" id="navbarDropdown">
+              <strong>關於我們</strong>
+              </a>
+            </li>
+          </ul>
+          <div class="d-sear">
+            <form class="d-flex" action="explore.html" method="POST">
+              <a href="explore.html" class="a-search"><i class="fas fa-search fa-2x"></i></a>
+              <input class="f-sear" type="search" placeholder="搜尋" aria-label="Search">
+              <!-- dropdown-toggle -->
+            </form>
+          </div>
+          <li class="nav-item dropdown">
+            <a class="a-img" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://www.flyingv.cc/images/nonuser.svg" class="user">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">登入</a></li>
+                <li><a class="dropdown-item" href="#">註冊</a></li>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+#------------------------------------------------------------# 舊版 explore
+<header>
+   
+    <nav class="navbar navbar-expand-lg" navbar-light>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="homepage.html">
+          <img src="C:\Users\User\OneDrive\桌面\taiwantechlogo.jpg" width="300px">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="explore.html">探索內容</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">會員註冊</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              關於我們
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">777</a></li>
+                <li><a class="dropdown-item" href="#">666</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">其他</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          <form class="d-flex" action="explore.html" method="POST">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <a href="explore.html" class="a-search"><i class="fas fa-search fa-2x"></i></a>
+            <!-- <button class="btn-info" type="submit">Search</button> -->
+          </form>
+          <li class="nav-item dropdown">
+            <a class="a-img" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://www.flyingv.cc/images/nonuser.svg" class="user">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                <li><a class="dropdown-item" href="#">登入</a></li>
+                
+                <li><a class="dropdown-item" href="#">註冊</a></li>
+            </ul>
+          </li>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+#--------------------------------------------------------#舊版 homepage
+
+<header>
+   
+    <nav class="navbar navbar-expand-lg" navbar-light>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="C:\Users\User\OneDrive\桌面\taiwantechlogo.jpg" width="300px">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="file:///D:/HTML/explore.html#">探索內容</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">會員註冊</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              關於我們
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">777</a></li>
+                <li><a class="dropdown-item" href="#">666</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">其他</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          <form class="d-flex" action="explore.html" method="POST">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <a href="explore.html" class="a-search"><i class="fas fa-search fa-2x"></i></a>
+            <!-- <button class="btn-info" type="submit">Search</button> -->
+          </form>
+          <li class="nav-item dropdown">
+            <a class="a-img" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://www.flyingv.cc/images/nonuser.svg" class="user">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                <li><a class="dropdown-item" href="#">登入</a></li>
+                
+                <li><a class="dropdown-item" href="#">註冊</a></li>
+            </ul>
+          </li>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+#------------------css 新版-------------------------------#
+
+.nav-item{
+	list-style: none;
+	
+}
+.nav-link{
+	color: black;
+	margin-top: -8px;
+	margin-right: 25px;
+	letter-spacing: 0.8px;
+}
+.nav-link:hover{
+	color: gray;
+}
+.d-sear{
+	overflow: hidden;
+	width: 34px;
+	height: 35px;
+	transition: width 2s;
+}
+.d-sear:hover{
+	width: 225px;
+}
+.f-sear{
+	height: 33px;
+	width: 180px;
+	border: none;
+	border-bottom: 2px solid #FF7733;
+  	padding: 12px 20px 12px 5px;
+  	margin-right: 5px;
+  	outline:none;
+    box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+}
+.a-img{
+	margin-bottom: 25px;
+	margin-right: 100px;
+	margin-left: 25px;
+}
+.user{
+	transition: all 2s ease-out;
+	margin-bottom: 5px;
+}
+.user:hover{
+	/*transform: rotate(720deg);*/
+	transform: scale(1.5,1.5);
+}
+.a-img1{
+	margin-right: 15px;
+}
+.a-img2{
+	margin-right: 15px;
+}
+.a-img3{
+	margin-right: 15px;
+}
+.col-md-4{
+	overflow:hidden;
+}
+.outer{
+	/*background: blue;*/
+}
+.p{
+	color: black;
+	text-decoration: none;
+	/*background-color: #f6f6f6;*/
+}
+p:hover{
+	color: red;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.a-search{
+	margin-right: 10px;
+	color: #FF7733;
+}
+.a-search:hover{
+	color: red;
+}
+
+
+
+
+
+
+
+#---------------------------------------------------#  css  explore 舊版
+
+
+
+.nav-item{
+	background-color: white;
+}
+.nav-link{
+	color: blue;
+	margin-right: 25px;
+
+}
+img{
+	max-width: 100%;
+}
+/*#second{
+	width: 100%;
+	/*max-width: 1600px;*/
+	/*height: 500px;*/
+	/*background: #df80ff;*/
+	/*border-top: 1px solid; */
+}*/
+#flex{
+	background-color: #f6f6f6;
+	/*border-top: 2px solid;*/
+
+	max-height: 1470px;
+	flex-wrap:wrap; 
+}
+#flex .container{
+	width: auto;
+    height: 470px;
+    
+    
+}
+.a-img-flflex{
+
+	width:100%;
+	height: 340px;
+	/*border-radius: 100%;*/
+	margin-bottom: 25px;
+}
+.outer{
+	/*background: blue;*/
+}
+#flex2{
+	/*flex-wrap:wrap; */
+	/*background-color: #f6f6f6;*/
+	/*border-top: 3px solid;*/
+	height: 470px;
+}
+#flex2 .container{
+	width: auto;
+    height: 470px;
+   
+}
+#flex3{
+	/*flex-wrap:wrap; */
+	/*background-color: #f6f6f6;*/
+	/*border-top: 3px solid;*/
+	height: 470px;
+}
+#flex3 .container{
+	width: auto;
+    height: 470px;
+   
+}
+.p{
+	color: black;
+	text-decoration: none;
+	/*background-color: #f6f6f6;*/
+
+}
+p:hover{
+	color: red;
+
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.a-search{
+	color: #FF7733;
+}
+.a-search:hover{
+	/*color: red;*/
+}
+
+
+
+#-------------------------------------------# css homepage舊版
+
+.nav-item{
+	background-color: white;
+}
+.nav-link{
+	color: blue;
+	margin-right: 25px;
+
+}
+img{
+	max-width: 100%;
+}
+.p{
+	color: black;
+	text-decoration: none;
+	/*background-color: #f6f6f6;*/
+
+}
+p:hover{
+    color: red;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.a-search{
+	color: #FF7733;
+}
+.a-search:hover{
+	/*color: red;*/
+}
+
+
+
+
+
+#-----------------------------------------------------------#   flex  html 
+
+
+<section id="flex">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1 text-left">
+          <h3 class="hot"><strong>熱門項目</strong></h3>
+          <!-- <div class="row">
+            <div class="col-md-4 col-sm-6 text-center">
+              <a href="#" class="flex-se">
+                <div class="ww">
+                  <img src="C:\Users\User\OneDrive\圖片\IMG20190616110334.jpg" alt="666666" class="d-flflex">
+                </div>
+                <p class="p"><strong>提案一</p></strong>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+              <a href="#" class="flex-se">
+                <div class="ww">
+                  <img src="C:\Users\User\OneDrive\圖片\IMG20190616110334.jpg" alt="666666" class="d-flflex">
+                </div>
+                <p class="p"><strong>提案二</p></strong>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center">
+              <a href="#" class="flex-se">
+                <div class="ww">
+                  <img src="C:\Users\User\OneDrive\圖片\IMG20190616110334.jpg" alt="666666" class="d-flflex">
+                </div>
+                <p class="p"><strong>提案三</p></strong>
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+

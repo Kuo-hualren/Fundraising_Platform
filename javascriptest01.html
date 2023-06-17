@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+	    	margin: 0;
+	    	/*background: black;*/
+	    	height: 1000px;
+	    }
+	    #Block433_512Container{
+	    	width: 400px;
+
+	    	margin: 0 auto;
+	    }
+        .tabs{
+        	margin: 0 auto;
+    		display: flex;
+    	}
+    	ul{
+    		max-width: 400px;
+    		/*margin: 0 auto;*/
+    	}
+    	li{
+    		width: 100px;
+    		list-style: none;
+    		margin-right: 5px;
+    		border: 1px solid;
+    		border-radius: 10px;
+    		line-height: 30px;
+    		text-align: center;
+    		/*flex: 1;*/
+    		color: black;
+    	}
+    	li.actived{
+    		list-style: none;
+    		margin-right: 5px;
+    		border: 1px solid;
+    		border-radius: 10px;
+    		line-height: 30px;
+    		color: white;
+    		background: brown;
+    	}
+    	li > a{
+    		text-decoration: none;
+    		color: black;
+    	}
+    	li.actived > a{
+    		color: white;
+    	}
+    	.act_img{
+    		/*margin-left: 30px;*/
+    	}
+    	.unblock{
+    		display: none;
+    	}
+    	#btnl{
+    		width: 80px;
+    		height: 40px;
+    		background: brown;
+    		color: white;
+    		margin:  0 auto;
+    		font-size: 16px;
+    	}
+    	#sdf{
+    		width: 500px;
+    		height: 500px;
+    		background: blue;
+    	}
+    </style>
+</head>
+
+<body>
+    <button id="btn">t</button>
+    
+    <!-- <h1 id="dd">fd</h1> -->
+    <div id="Block433_512Container">
+        <div class="head">
+            <ul class="tabs">
+                <li class="actived"><a href="#">新年新運飾</a></li>
+                <li class=""><a href="#">官方社團</a></li>
+                <li class=""><a href="#">日本直送</a></li>
+                <li class=""><a href="#">混搭時尚</a></li>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="tab_content">
+                <div class="tab_row"><a class="act_img" href="#">
+                        <img src="C:\Users\User\OneDrive\圖片\pexels-asad-photo-maldives-1456291.jpg" alt="" width="400" height="280"></a></div>
+            </div>
+            <div class="tab_content unblock">
+                <div class="tab_row"><a class="act_img" href="#"><img src="C:\Users\User\OneDrive\圖片\pexels-roberto-nickson-2775196.jpg" alt="" width="400" height="280"></a></div>
+            </div>
+            <div class="tab_content unblock">
+                <div class="tab_row"><a class="act_img" href="#"><img src="C:\Users\User\OneDrive\圖片\pexels-asad-photo-maldives-1456291.jpg" alt="" width="400" height="280"></a></div>
+            </div>
+            <div class="tab_content unblock">
+                <div class="tab_row"><a class="act_img" href="#"><img src="C:\Users\User\OneDrive\圖片\pexels-roberto-nickson-2775196.jpg" alt="" width="400" height="280"></a></div>
+            </div>
+        </div>
+    </div>
+    <div style="margin: 0 auto; width: 80px; height: 50px;">
+    	<button id="btnl">Try</button>
+    </div>
+    
+    <div id="sdf" style="margin: 0 auto;"><img src="C:\Users\User\OneDrive\圖片\sana01.jpg"></div>
+    
+
+    <script type="text/javascript">
+    	function disnone() {
+	    	c.style.display = 'none'
+    	}
+    	const c =  document.getElementById("sdf")
+    	c.style.display = 'none'
+    	const bt =  document.getElementById("btnl")
+    	bt.addEventListener("click", () => {
+    		c.style.display = 'flex'
+    	})
+    	window.addEventListener('mousedown', disnone)
+    	let navs = Array.from(document.querySelectorAll(".head > ul > li")) 
+    	let imgs = Array.from(document.querySelectorAll(".body > .tab_content"))
+
+    	navs.forEach((nav)=>{
+    		nav.addEventListener("mouseenter", function() {
+    			document.querySelector(".head > ul > li.actived").classList.remove("actived")
+    			this.classList.add("actived")
+    			document.querySelector(".body > .tab_content:not(.unblock)").classList.add("unblock")
+    			let index = navs.indexOf(this)
+    			imgs[index].classList.remove("unblock")
+
+    		})
+    	})
+    // function add(p1,p2,dis) {
+    // 	let r = (p1+p2)-dis
+    // 	let m = 'sss'
+    // 	if (r>5000) {
+    // 		m = 'big'
+    // 		return m
+    // 	}
+    // 	else if (r>2000) {
+    // 		m = 'middle'
+    // 		return m
+    // 	}
+    // 	else if (r<=2000 && r>=0) {
+    // 		m = 'small'
+    // 		return m
+    // 	}
+    // 	else {
+    // 		m = 'fuck you'
+    // 		return m
+    // 	}
+
+    // }
+    // let x = add(5000,1000,40000)
+    // console.log(x);
+
+    // window.
+    // const p =  document.getElementById('dd')
+    // console.log(p)
+    // p.innerText = 'sss'
+    // var c = document.getElementById("btn");
+    // c.addEventListener("click", displayDate);
+    // c.addEventListener("mouseover", ff);
+
+    // function displayDate() {
+      // const p = document.getElementById("dd");
+      // p.innerText = 'yes'
+    	// alert('ff');
+    // }
+    // function ff() {
+    // 	const p = document.getElementById("dd");
+    // 	p.innerText = 'no'
+    // }
+    function t(t1) {
+    	r = t1*1.8+32
+    	return r
+    }
+    
+    </script>
+</body>
+
+</html>

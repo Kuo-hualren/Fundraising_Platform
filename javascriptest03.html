@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background: chocolate;
+            max-height: 1000px;
+        }
+        #Block433_512Container{
+            position: relative;
+            width: 800px;
+            margin: 0 auto;
+            /*filters: alpha(opacity=10);*/
+        }
+        .body{
+            width: 400px;
+            margin: 0 auto;
+        }
+        .tabs{
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+        }
+        #ds{
+            width: 102px;
+            list-style: none;
+            margin-right: 2px;
+            border: 1px solid;
+            border-radius: 10px;
+            line-height: 30px;
+            text-align: center;
+            /*flex: 1;*/
+            color: black;
+        }
+        #ds.actived{
+            list-style: none;
+            margin-right: 2px;
+            border: 1px solid;
+            border-radius: 10px;
+            line-height: 30px;
+            color: white;
+            background: brown;
+        }
+        #ds > a{
+            text-decoration: none;
+            color: black;
+        }
+        #ds.actived > a{
+            color: white;
+        }
+        .act_img{
+            /*margin-left: 30px;*/
+        }
+        .unblock{
+            display: none;
+        }
+        #Block42Container{
+            background: black;
+            /*position: absolute;*/
+            position: fixed;
+            z-index: 1000;
+            width: 800px;
+            height: 560px;
+            margin: 0 auto;
+            /*display: none;*/
+            top: 100px;
+            border: 2px solid black;
+            /*filters: alpha(opacity=150);*/
+        }
+        #Block45Container{
+            position: fixed;
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,.14);
+        }
+        .inimg{
+            width: 800px; 
+            height: 560px;
+        }
+        #btnl{
+            width: 80px;
+            height: 40px;
+            background: brown;
+            color: white;
+            margin:  0 auto;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #sdf{
+            position: relative;
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+            background: blue;
+            cursor: grab;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button id="btn">t</button> -->
+    <!-- <h1 id="dd">fd</h1> -->
+    <div id="Block433_512Container">
+        <div class="tac" id="Block42Container">
+            <div class="tacs">
+                <img src="C:\Users\User\OneDrive\圖片\pexels-asad-photo-maldives-1456291.jpg" class="inimg" style="margin:0 auto;">
+            </div>
+            <div class="tacs unblock">
+                <img src="C:\Users\User\OneDrive\圖片\pexels-roberto-nickson-2775196.jpg" class="inimg" style="margin:0 auto; vertical-align:middle;">
+            </div>
+            <div class="tacs unblock">
+                <img src="C:\Users\User\OneDrive\圖片\TWICE-Minaimg.jpg" class="inimg" style="margin:0 auto;">
+            </div>
+            <div class="tacs unblock">
+                <img src="C:\Users\User\OneDrive\圖片\IMG20190616110334.jpg" class="inimg" style="margin:0 auto;">
+            </div>
+        </div>
+        <div class="tbc" id="Block45Container"></div>
+        <div class="head" id="heads">
+            <div class="tabs">
+                <div class="actived" id="ds"><a href="#">新年新運飾</a></div>
+                <div class="" id="ds"><a href="#">官方社團</a></div>
+                <div class="" id="ds"><a href="#">日本直送</a></div>
+                <div class="" id="ds"><a href="#">混搭時尚</a></div>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="tab_content">
+                    <div class="tab_row"><a class="act_img" href="#">
+                            <img src="C:\Users\User\OneDrive\圖片\pexels-asad-photo-maldives-1456291.jpg" alt="" width="400" height="280" id="imgss"></a></div>
+                </div>
+                <div class="tab_content unblock">
+                    <div class="tab_row"><a class="act_img" href="#"><img src="C:\Users\User\OneDrive\圖片\pexels-roberto-nickson-2775196.jpg" alt="" width="400" height="280" id="imgss"></a></div>
+                </div>
+                <div class="tab_content unblock">
+                    <div class="tab_row"><a class="act_img" href="#"><img src="C:\Users\User\OneDrive\圖片\TWICE-Minaimg.jpg" alt="" width="400" height="280" id="imgss"></a></div>
+                </div>
+                <div class="tab_content unblock">
+                    <div class="tab_row"><a class="act_img" href="#"><img src="C:\Users\User\OneDrive\圖片\IMG20190616110334.jpg" alt="" width="400" height="280" id="imgss"></a></div>
+                </div>
+            </div>
+        </div>
+        <div style="margin: 0 auto; width: 80px; height: 50px;">
+            <button id="btnl">Try</button>
+        </div>
+        <div id="sdf">
+            
+            <img src="C:\Users\User\OneDrive\圖片\sana01.jpg" id="img">
+        </div>
+    </div>
+
+        <script type="text/javascript">
+        function disnone() {
+            c.style.display = 'none'
+        }
+        const c = document.getElementById("sdf")
+        c.style.display = 'none'
+        const bt = document.getElementById("btnl")
+        const img = document.getElementById("img")
+        bt.addEventListener("click", () => {
+            c.style.display = 'flex'
+        })
+        img.addEventListener('mousedown', disnone)
+        // ---------------------------------------------------------------------
+        let navs = Array.from(document.querySelectorAll(".head > .tabs > #ds"))
+        let imgs = Array.from(document.querySelectorAll(".body > .tab_content"))
+        let upimg = Array.from(document.querySelectorAll(".tac > .tacs"))
+
+        navs.forEach((nav) => {
+            // console.log(nav)
+            nav.addEventListener("mouseenter", function() {
+                document.querySelector(".head > .tabs > #ds.actived").classList.remove("actived")
+                this.classList.add("actived")
+                document.querySelector(".body > .tab_content:not(.unblock)").classList.add("unblock")
+                
+                let index = navs.indexOf(this)
+                imgs[index].classList.remove("unblock")
+                console.log(imgs)
+                nav.addEventListener("click", () => {
+                    console.log(index)
+                    console.log(upimg)
+                    document.querySelector(".tac > .tacs:not(.unblock)").classList.add("unblock")
+                    upimg[index].classList.remove("unblock")
+
+                })
+                
+            })
+            const g = document.getElementById("heads")
+            const k = document.getElementById("Block42Container")
+            const k2 = document.getElementById("Block45Container")
+            
+            nav.addEventListener("click", () => {
+                // if (k.style.display === 'flex') {
+                //     g.style.opacity = '1.0'
+                //     k.style.opacity = '1.0'
+                //     k2.style.display = 'none'
+                //     k.style.display = 'none'
+                    
+                // } else {
+                //     // g.style.opacity = '0.1'
+                //     k.style.display = 'flex'
+                //     k2.style.display = 'flex'
+                    
+
+                // }
+                k.style.display = 'flex'
+                k2.style.display = 'flex'
+                c.style.position = 'fixed'
+                // c.style.display = 'none'
+
+                k2.addEventListener("click", () => {
+                    k2.style.display = 'none'
+                    k.style.display = 'none'
+                    c.style.position = 'relative'
+                })
+            })
+
+        })
+        imgs.forEach((i) => {
+            console.log(i)
+            const k = document.getElementById("Block42Container")
+            const k2 = document.getElementById("Block45Container")
+            // console.log(imgs)
+            i.addEventListener("mouseenter", function() {
+                // document.querySelector(".tac > .tacs").classList.add("unblock")
+
+                let index = upimg.indexOf(this)
+                // imgs[index].classList.remove("unblock")
+                // console.log(index) 
+                console.log(imgs)
+                console.log(upimg.indexOf(2))
+                
+            })
+            i.addEventListener("click", () => {
+                
+                k.style.display = 'flex'
+            })
+
+        })
+        
+        // const h = document.getElementById("ds")
+        // const k = document.getElementById("Block42Container")
+        // h.addEventListener("click", () => {  
+        //     if (k.style.display === 'flex') {
+        //         k.style.display = 'none'
+        //     }else {
+        //         k.style.display = 'flex'
+        //     }
+
+        // })
+
+        // const h = document.getElementById("imgss")
+        // h.addEventListener("click", () => {
+        //     h.style.display = 'none'
+        // })
+
+        // var c = document.getElementById("btn");
+        // c.addEventListener("click", displayDate);
+        // c.addEventListener("mouseover", ff);
+
+        // function displayDate() {
+        // const p = document.getElementById("dd");
+        // p.innerText = 'yes'
+        // alert('ff');
+        // }
+        </script>
+</body>
+
+</html>

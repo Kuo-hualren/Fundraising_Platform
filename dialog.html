@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	  <link rel="stylesheet" href="/resources/demos/style.css">
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  <style>
+	  	#dialog{
+	  		background: red;
+	  	}
+	  </style>
+	  <script>
+	  $( function() {
+	    $( "#dialog" ).dialog({
+	      autoOpen: false,
+	      show: {
+	        effect: "blind",
+	        duration: 1000
+	      },
+	      hide: {
+	        effect: "explode",
+	        duration: 1000
+	      }
+	    });
+	 
+	    $( "#opener" ).on( "click", function() {
+	      $( "#dialog" ).dialog( "open" );
+	    });
+	  } );
+	  </script>
+</head>
+<body>
+	<div id="dialog" title="基本對話框">
+	  <p>這是一個動畫對話框，可用於顯示信息。對話框窗口可以移動、調整大小和關閉 icon.</p>
+	</div>	
+ 
+	<button id="opener" type="submit">Open Dialog</button>
+</body>
+</html>
+<!-- &apos;x&apos; -->

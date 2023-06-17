@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		form{
+			line-height: 2em;
+		}
+		form>input{
+			padding: 5px 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		form>input:valid+.ok{
+			display: inline;
+		}
+		form>input:invalid+.ok{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h3>註冊帳號</h3>
+	<form>
+		帳號：<input type="text" required pattern="[A-Za-z0-9]{8,12}" maxlength="12">
+		<span class="ok">ok</span>
+		<br>
+		密碼：<input type="password" required pattern="[A-Za-z0-9]{8,12}" maxlength="12">
+		<span class="ok">ok</span>
+		<br>
+		郵件：<input type="email" required pattern="[A-Za-z0-9]{8,12}" maxlength="12">
+		<span class="ok">ok</span>
+		<br>
+		性別：
+		男<input type="radio" name="sss">
+		女<input type="radio" name="sss">
+
+	</form>
+	
+</body>
+</html>

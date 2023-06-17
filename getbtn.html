@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function sss(){
+			var btn = document.getElementById("btn");
+			btn.onclick=function(){
+				alert("棒!")
+			}
+			var event = function(){
+				alert("hello")
+			}
+			btn.addEventListener("mouseover",event)
+			function add(a1,a2){
+				alert(a1*a2)
+			}
+		}
+	</script>
+	<style>
+		.ee{
+			width: 80px;
+			outline: none;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		#demoInput{
+			width: 50px;
+			outline: none;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		.bb{
+			width: 70px;
+			outline: none;
+			background: white;
+			border: 1px solid #f43686;
+		}
+		.bb:hover{
+			background: red;
+		}
+		#img{
+			width: 600px;
+			display: none;
+		}
+		#imgg{
+			display: block;
+
+		}
+	</style>
+</head>
+<body onload="sss()">
+	<!-- <button id="btn">click</button> -->
+
+
+	<!-- num1:<input id="num1" type="number" class="ee"> 
+	num2:<input id="num2" type="number" class="ee"> 
+
+	<button type="button" onclick="myFunction()" class="bb">compute</button> 
+
+	answer：<input id="demoInput" type="text"> 
+	and answer: <p id="demoHtml"></p> 
+
+	<script> 
+	function myFunction() { 
+	    var x = document.getElementById("num1").value; 
+	    var y = document.getElementById("num2").value; 
+	    var ans = parseInt(x) + parseInt(y) ;
+	    document.getElementById("demoInput").value = ans; 
+	    document.getElementById("demoHtml").innerHTML = ans; 
+	} 
+	</script>  -->
+
+	<button onclick="myFunction()">顯示</button>
+	<button onclick="nyFunction()">隱藏</button>
+	<img src="66666666.jpg" id="img">
+
+	<script>
+	function myFunction() {
+		document.getElementById("img").style.display='block';
+	  
+	}
+	function nyFunction() {
+	  document.getElementById("img").style.display='none';
+	}
+	</script>
+
+
+
+
+
+
+
+
+	<button id="btnn">隱藏</button>
+	<img src="coral.jpg" id="imgg" width="500px">
+		
+	<script>
+		var btn = document.getElementById("btnn");
+		var img = document.getElementById("imgg");
+		
+		btn.addEventListener("click",function (){
+		//判斷按鈕文字內容
+			if(btn.innerText == "隱藏"){
+				//當按鈕文字為隱藏時,圖片隱藏
+				// img.style.opacity = 0;
+				img.style.display='none';
+				
+				//同時,按鈕文字變成現實  下面同理
+				btn.innerText = "顯示";
+			}
+			else{
+				// img.style.opacity = 1;
+				img.style.display='block';
+				btn.innerText = "隱藏";
+			}
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		#main{
+			width: 100%;
+			min-height: 600px;
+			max-height: 1600px;
+			background: blue;
+			display: flex;
+			justify-content: center;
+			box-sizing: border-box;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			/*flex-direction: column;*/
+		}
+		.d{
+			background: blue;
+			width: 400px;
+			max-height: 225px;
+			min-height: 100px;
+			
+			margin: 0px 10px;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+		@media screen and (max-width: 992px){
+			.d{
+				min-height: 100px;	
+				
+				width: 33.3%;
+				float: left;
+			}
+		}
+		@media screen and (max-width: 768px){
+			.d{
+				min-height: 100px;	
+				width: 33.3333%;
+				float: left;
+			
+			}
+		}
+	</style>
+</head>
+<body>
+	
+	<main id="main">
+		<div class="d"><img src="IMG20190616110334.jpg"></div>
+		<div class="d"><img src="IMG20190616110334.jpg"></div>
+		<div class="d"><img src="IMG20190616110334.jpg"></div>
+		<div class="d"><img src="IMG20190616110334.jpg"></div>
+		<div class="d"><img src="IMG20190616110334.jpg"></div>
+		<div class="d"><img src="IMG20190616110334.jpg"></div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function add(a1,a2){
+			alert(a1*a2)
+		}
+		// add(20,20)
+		// var add1 = function(a3,a4){
+		// 	alert(a3/a4)
+		// }
+		// add1(400,20)
+		// var add2 = add1
+		// add2(1000,25)
+		function over(a){
+			a.style.background="yellow"
+		}
+	</script>
+	<style>
+		.box{
+			width: 300px;
+			height: 300px;
+			
+		}
+	</style>
+</head>
+<body>	
+	<!-- onmouseover="this.style.background='yellow'" -->
+	<button onclick="add(40,40)">33</button>
+	<div class="box" onmouseover="over(this)" onmouseout="this.style.background='blue'"></div>
+</body>
+</html>
