@@ -1,0 +1,12 @@
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\bin\Debug\net6.0\BlazorIJS.Shared.deps.json
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\bin\Debug\net6.0\BlazorIJS.Shared.dll
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\bin\Debug\net6.0\BlazorIJS.Shared.pdb
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\BlazorIJS.Shared.csproj.AssemblyReference.cache
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\BlazorIJS.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\BlazorIJS.Shared.AssemblyInfoInputs.cache
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\BlazorIJS.Shared.AssemblyInfo.cs
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\BlazorIJS.Shared.csproj.CoreCompileInputs.cache
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\BlazorIJS.Shared.dll
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\refint\BlazorIJS.Shared.dll
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\BlazorIJS.Shared.pdb
+D:\Blazor\BlazorIJS\BlazorIJS\Shared\obj\Debug\net6.0\ref\BlazorIJS.Shared.dll

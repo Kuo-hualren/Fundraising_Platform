@@ -1,0 +1,54 @@
+﻿@page "/employees"
+@inject IEmployeeService EmployeeService
+@inject NavigationManager NavigationManager
+
+
+<h3>員工資料表</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>手機號碼</th>
+            <th>信箱</th>
+            <th>職位</th>
+            <th>員工ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in EmployeeService.Employees)
+        {
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.Phone</td>
+                <td>@emp.Email</td>
+                <td>@emp.Position</td>
+                <td>@emp.Id</td>                
+                <td>
+                    <button class="btn btn-primary" @onclick="(() => ShowRecord(emp.Id))"><i class="oi oi-pencil"></i></button>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+<button class="btn btn-primary" @onclick="CreateNewRecord">Create New Hero</button>
+
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await EmployeeService.GetEmployees();
+    }
+    void ShowRecord(int id)
+    {
+        NavigationManager.NavigateTo($"record/{id}");
+    }
+    void CreateNewRecord()
+    {
+        NavigationManager.NavigateTo("/record");
+    }
+
+    
+
+}

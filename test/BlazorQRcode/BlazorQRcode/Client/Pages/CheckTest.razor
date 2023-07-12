@@ -1,0 +1,94 @@
+﻿@page "/checktest"
+
+
+<h3>QR Code 打卡程式</h3>
+<button @onclick="bar">生成 QR Code</button>
+
+@if (isCheckInSuccessful)
+{
+    <p>打卡成功！</p>
+}
+else if (isCheckInFailed)
+{
+    <p>打卡失敗！</p>
+}
+
+@if (!isCheckingIn)
+{
+    <button @onclick="GenerateQRCode">生成 QR Code</button>
+}
+else
+{
+    <p>請使用您的手機掃描以下 QR Code 進行打卡：</p>
+    <img src="@qrCodeData" alt="QR Code">
+}
+
+@code {
+    bool isCheckingIn = false;
+    bool isCheckInSuccessful = false;
+    bool isCheckInFailed = false;
+    string qrCodeData = string.Empty;
+
+    public void GenerateQRCode()
+    {
+        isCheckingIn = true;
+        isCheckInSuccessful = false;
+        isCheckInFailed = false;
+
+        try
+        {
+            // 生成 QR Code 的相關邏輯，例如根據特定格式組織資料
+
+            string checkInData = "https://hackmd.io/@Aiunion/ryAEBl5K9"; // 替換為實際的打卡資料
+
+            // 使用 ZXing.Net 庫生成 QR Code
+            //var qrCodeWriter = new ZXing.BarcodeWriterPixelData
+            //    {
+            //        Format = BarcodeFormat.QR_CODE,
+            //        Options = new ZXing.Common.EncodingOptions
+            //        {
+            //            Height = 300,
+            //            Width = 300
+            //        }
+            //    };
+
+            //var pixelData = qrCodeWriter.Write(checkInData);
+            //var qrCodeBitmap = new System.Drawing.Bitmap(pixelData.Width,pixelData.Height);
+            //var qrCodeBitmapData = qrCodeBitmap.LockBits(new System.Drawing.Rectangle(0, 0, pixelData.Width, pixelData.Height), System.Drawing.Imaging.ImageLockMode.WriteOnly, qrCodeBitmap.PixelFormat);
+            //System.Runtime.InteropServices.Marshal.Copy(pixelData.Pixels, 0, qrCodeBitmapData.Scan0, pixelData.Pixels.Length);
+            //qrCodeBitmap.UnlockBits(qrCodeBitmapData);
+
+            //// 將 QR Code 圖片轉換為 Base64 字串
+            //using (var stream = new System.IO.MemoryStream())
+            //{
+            //    qrCodeBitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+            //    qrCodeData = $"data:image/png;base64,{Convert.ToBase64String(stream.ToArray())}";
+            //}
+
+            //<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+
+            
+
+
+            isCheckInSuccessful = true;
+        }
+        catch (Exception ex)
+        {
+            isCheckInFailed = true;
+            Console.WriteLine(ex.ToString());
+        }
+        finally
+        {
+            isCheckingIn = false;
+        }
+    }
+
+    public void bar()
+    {
+        var qrCode = QRCodeWriter.CreateQrCode("WWW.IronSoftWare.com");
+        qrCode.SaveAsPng(@"D:\qrCode.png");
+    }
+        
+
+    
+}

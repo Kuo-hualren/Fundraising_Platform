@@ -1,0 +1,36 @@
+﻿@page "/Login"
+@using BlazorToken.Shared
+<div class="form-signin w-100 m-auto">
+    <EditForm Model="@loginDto" OnValidSubmit="HandleValidSubmit" data-bitwarden-watching="1">
+        <h1 class="h3 mb-3 fw-normal">請登入</h1>
+
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+            @bind-value="loginDto.Username">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+            @bind-value="loginDto.Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> 記住我
+            </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">登入</button>
+        <p class="mt-5 mb-3 text-muted">© 2022</p>
+    </EditForm>
+</div>
+@code {
+    private LoginDto loginDto = new LoginDto();
+
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine($"Username:{loginDto.Username}");
+        Console.WriteLine($"Password:{loginDto.Password}");
+    }
+
+}

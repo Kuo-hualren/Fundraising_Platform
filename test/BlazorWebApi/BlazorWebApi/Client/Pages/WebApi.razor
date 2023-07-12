@@ -1,0 +1,65 @@
+﻿@page "/WebAPI"
+@using System.Net.Http
+@using System.Net.Http.Json
+@using System.Threading.Tasks
+@inject HttpClient Http
+
+<h3>WebApi</h3>
+
+<ul>
+    @foreach (var movie in Movies)
+    {
+        <li>@movie</li>
+    }
+</ul>
+
+@code {
+    private string? message;
+    private List<Movie> Movies = new List<Movie>();
+    protected override async Task OnInitializedAsync() =>
+        Movies = await Http.GetFromJsonAsync<List<Movie>>("https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8");
+        
+    
+
+
+    public class Movie
+    {
+        public string? version { get; set; }
+        public string? UID { get; set; }
+        public string? title { get; set; }
+        public string? category { get; set; }
+        public Showinfo[]? showInfo { get; set; }
+        public string? showUnit { get; set; }
+        public string? discountInfo { get; set; }
+        public string? descriptionFilterHtml { get; set; }
+        public string? imageUrl { get; set; }
+        public string[]? masterUnit { get; set; }
+        public string[]? subUnit { get; set; }
+        public object[]? supportUnit { get; set; }
+        public string[]? otherUnit { get; set; }
+        public string? webSales { get; set; }
+        public string? sourceWebPromote { get; set; }
+        public string? comment { get; set; }
+        public string? editModifyDate { get; set; }
+        public string? sourceWebName { get; set; }
+        public string? startDate { get; set; }
+        public string? endDate { get; set; }
+        public int? hitRate { get; set; }
+    }
+
+    public class Showinfo
+    {
+        public string? \u7a05\u7a2e { get; set; }
+        public string? name { get; set; }
+        public string? releaseDate { get; set; }
+        public string? issue { get; set; }
+        public string? produce { get; set; }
+        public string? theaterCount { get; set; }
+        public string? ticketChangeRate { get; set; }
+        public string? tickets { get; set; }
+        public string? amounts { get; set; }
+        public string? totalTickets { get; set; }
+        public string? totalAmounts { get; set; }
+
+    }
+}

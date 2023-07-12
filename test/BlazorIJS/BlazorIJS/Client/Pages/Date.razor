@@ -1,0 +1,17 @@
+﻿@page "/datetime"
+@inject ISuperHeroService SuperHeroService
+
+
+
+<h3>Date</h3>
+<div>@SuperHeroService.Dates[0].dateTime</div>
+
+
+@code {
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        await SuperHeroService.GetDate();
+    }
+}

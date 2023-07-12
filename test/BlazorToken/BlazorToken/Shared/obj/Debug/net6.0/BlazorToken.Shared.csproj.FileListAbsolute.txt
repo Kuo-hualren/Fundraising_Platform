@@ -1,0 +1,12 @@
+D:\Blazor\BlazorToken\BlazorToken\Shared\bin\Debug\net6.0\BlazorToken.Shared.deps.json
+D:\Blazor\BlazorToken\BlazorToken\Shared\bin\Debug\net6.0\BlazorToken.Shared.dll
+D:\Blazor\BlazorToken\BlazorToken\Shared\bin\Debug\net6.0\BlazorToken.Shared.pdb
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\BlazorToken.Shared.csproj.AssemblyReference.cache
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\BlazorToken.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\BlazorToken.Shared.AssemblyInfoInputs.cache
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\BlazorToken.Shared.AssemblyInfo.cs
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\BlazorToken.Shared.csproj.CoreCompileInputs.cache
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\BlazorToken.Shared.dll
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\refint\BlazorToken.Shared.dll
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\BlazorToken.Shared.pdb
+D:\Blazor\BlazorToken\BlazorToken\Shared\obj\Debug\net6.0\ref\BlazorToken.Shared.dll

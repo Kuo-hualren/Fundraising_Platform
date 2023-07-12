@@ -1,0 +1,93 @@
+﻿@page "/checkin"
+
+@inject HttpClient httpClient
+
+<h3>QR Code 打卡程式</h3>
+
+@if (isCheckInSuccessful)
+{
+    <p>打卡成功！</p>
+}
+else if (isCheckInFailed)
+{
+    <p>打卡失敗！</p>
+}
+
+@if (!isCheckingIn)
+{
+    <button @onclick="GenerateQRCode">生成 QR Code</button>
+}
+else
+{
+    <p>請使用您的手機掃描以下 QR Code 進行打卡：</p>
+    <img src="@qrCodeData" alt="QR Code">
+}
+
+@code {
+    bool isCheckingIn = false;
+    bool isCheckInSuccessful = false;
+    bool isCheckInFailed = false;
+    string qrCodeData = string.Empty;
+
+    public void GenerateQRCode()
+    {
+        isCheckingIn = true;
+        isCheckInSuccessful = false;
+        isCheckInFailed = false;
+
+        try
+        {
+            Byte[] byteArray;
+            // 生成 QR Code 的相關邏輯，例如根據特定格式組織資料
+
+            string checkInData = "https://hackmd.io/@Aiunion/ryAEBl5K9"; // 替換為實際的打卡資料
+
+            // 使用 ZXing.Net 庫來生成 QR Code 圖片
+            var qrCodeWriter = new ZXing.BarcodeWriterPixelData
+                {
+                    Format = ZXing.BarcodeFormat.QR_CODE,
+                    Options = new ZXing.Common.EncodingOptions
+                    {
+                        Height = 300,
+                        Width = 300
+                    }
+                };
+            var pixelData = qrCodeWriter.Write(checkInData);
+            //var qrCodeBitmap = new Bitmap(pixelData.Width, pixelData.Height, PixelFormat.Format32bppRgb);
+            using (var bitmap = new Bitmap(pixelData.Width, pixelData.Height, PixelFormat.Format32bppRgb))
+            {
+                using(var ms = new MemoryStream())
+                {
+                    var bitmapData = bitmap.LockBits(new Rectangle(0, 0, pixelData.Width, pixelData.Height), ImageLockMode.WriteOnly, PixelFormat.Format32bppRgb);
+                    try
+                    {
+                        Marshal.Copy(pixelData.Pixels, 0, bitmapData.Scan0, pixelData.Pixels.Length);
+                    }
+                    finally
+                    {
+                        bitmap.UnlockBits(bitmapData);
+                    }
+                    //bitmap.Save(ms, ImageFormat.Png);
+                    //byteArray = ms.ToArray();
+
+                    //string fileGuid = Guid.NewGuid().ToString().Substring(0, 4);
+                    bitmap.Save("C:\\generated.png", ImageFormat.Png);
+                }
+            }
+            //var qrCodeBitmapData = qrCodeBitmap.LockBits(new Rectangle(0, 0, pixelData.Width, pixelData.Height), ImageLockMode.WriteOnly, qrCodeBitmap.PixelFormat);
+            //Marshal.Copy(pixelData.Pixels, 0, qrCodeBitmapData.Scan0, pixelData.Pixels.Length);
+            //qrCodeBitmap.UnlockBits(qrCodeBitmapData);
+
+            //// 將 QR Code 圖片轉換為 Base64 字串
+            //using (MemoryStream ms = new MemoryStream())
+            //{
+            //    qrCodeBitmap.Save(ms, ImageFormat.Png);
+            //    qrCodeData = $"data:image/png;base64,{Convert.ToBase64String(ms.ToArray())}";
+            //}
+        }
+        catch (Exception)
+        {
+            isCheckInFailed = true;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+﻿@page "/Bind"
+@using System.Globalization;
+<h3>BindSample</h3>
+
+<p>輸入的文字是: @Message </p>
+<input @bind="Message" @bind:event="oninput" placeholder="請輸入文字" />
+<p>自定格式化: @FormatPrice </p>
+<input @bind="Price" />
+
+@code {
+    private string? Message { get; set; }
+
+    private decimal Price;
+
+    private string FormatPrice
+    {
+        get
+        {
+            return Price.ToString("C", CultureInfo.CurrentCulture);
+        }
+    }
+}

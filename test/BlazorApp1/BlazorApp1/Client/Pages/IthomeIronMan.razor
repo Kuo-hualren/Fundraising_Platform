@@ -1,0 +1,72 @@
+﻿@page "/IthomeIronMan"
+
+@using System.ComponentModel.DataAnnotations
+
+
+<h3>主題競賽報名</h3>
+<p>請選擇組別，並填寫參賽題目及簡介。</p>
+
+<EditForm Model="@ironmanApplyModel" OnValidSubmit="@HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label class="form-title" for="exampleFormControlSelect1">選擇主題</label><label class="note">報名後無法修改</label>
+        <div class="form-group ">
+            <InputSelect @bind-Value="ironmanApplyModel.Group" class="form-control input-lg" required="required">
+                <option value="" disabled selected="selected">請選擇您要參加的競賽主題</option>
+                @foreach (var item in group)
+                {
+                    <option value="@item">@item</option>
+                }
+            </InputSelect>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-title" for="topic">參賽題目</label> <label class="note">開賽前可以修改，80個字以內</label>
+        <InputText id="agenda" @bind-Value="ironmanApplyModel.Topic" class="form-control" placeholder="80 個字以內" required="required" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-title" for="intro">題目簡介</label> <label class="note">簡單介紹參賽的內容與方向，300個字以內</label>
+        <InputTextArea @bind-Value="ironmanApplyModel.Description" class="form-control input-lg" cols="30" rows="10" maxlength="300" required="required"></InputTextArea>
+    </div>
+
+    <div class="form-group form-check">
+
+        <input type="checkbox" class="form-check-input" id="done" required="required">
+        <label class="form-check-label" for="done">我已閱讀並同意受本<a href="https://r.itho.me/ironguide" target="_blank">活動簡章</a>及相關辦法規定之拘束。</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block">確定報名</button>
+</EditForm>
+
+@code {
+    private List<string> group = new List<string>
+    {
+        "Agile","AI&Data","DevOps","IT管理","Mobile Development",
+        "Modern Web","Security","Software Development","Web 3","影片教學"
+    };
+
+    private IronmanApplyModel ironmanApplyModel = new IronmanApplyModel();
+
+    private void HandleSubmit()
+    {
+        Console.WriteLine($"送出成功! 主題:{ironmanApplyModel.Group} 題目:{ironmanApplyModel.Topic} 說明:{ironmanApplyModel.Description}");
+    }
+
+    public class IronmanApplyModel
+    {
+        [Required]
+        public string? Group { get; set; }
+
+        [Required]
+        [StringLength(80)]
+        public string? Topic { get; set; }
+
+        [Required]
+        [StringLength(300)]
+        public string? Description { get; set; }
+    }
+}

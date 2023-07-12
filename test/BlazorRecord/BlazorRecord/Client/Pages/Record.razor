@@ -1,0 +1,26 @@
+﻿@page "/record"
+@inject IEmployeeService EmployeeService
+@using BlazorRecord.Shared
+
+<h3>Record</h3>
+
+<EditForm Model="record" OnSubmit="HandleSubmit">
+    <div>
+        <label for="firstname">First Name</label>
+        <InputText id="firstname" @bind-Value="hero.FirstName" class="form-control"></InputText>
+    </div>
+    <div>
+        <label for="lastname">Last Name</label>
+        <InputText id="lastname" @bind-Value="hero.LastName" class="form-control"></InputText>
+    </div>
+    <div>
+        <label for="heroname">Hero Name</label>
+        <InputText id="heroname" @bind-Value="hero.HeroName" class="form-control"></InputText>
+    </div>
+    
+    <br />
+    <button type="submit" class="btn btn-primary">btnText</button>
+
+@code {
+    BlazorRecord.Shared.PunchRecord record = new BlazorRecord.Shared.PunchRecord();
+}

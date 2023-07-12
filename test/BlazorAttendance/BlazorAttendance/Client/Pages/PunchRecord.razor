@@ -1,0 +1,44 @@
+﻿@page "/punchrecord"
+@inject IEmployeeService EmployeeService
+
+
+<h3>PunchRecord</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>員工編號</th>
+            <th>員工姓名</th>
+            <th>手機號碼</th>
+            <th>信箱</th>
+            <th>職位</th>
+            <th>職位</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var rec in EmployeeService.Records)
+        {
+            <tr>
+                <td>@rec.Id</td>
+                <td>@rec.Name</td>
+                <td>@rec.Time</td>
+                <td>@rec.PunchIn</td>
+                <td>@rec.PunchOut</td>
+                <td>@rec.Hours</td>
+                <td>
+                    <button class="btn btn-primary"><i class="oi oi-pencil"></i> 打卡</button>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await EmployeeService.GetPunchRecord();
+    }
+
+}

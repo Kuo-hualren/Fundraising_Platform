@@ -1,0 +1,8 @@
+D:\Blazor\CsharpTest1\CsharpTest1\bin\Debug\CsharpTest1.exe.config
+D:\Blazor\CsharpTest1\CsharpTest1\bin\Debug\CsharpTest1.exe
+D:\Blazor\CsharpTest1\CsharpTest1\bin\Debug\CsharpTest1.pdb
+D:\Blazor\CsharpTest1\CsharpTest1\obj\Debug\CsharpTest1.csproj.AssemblyReference.cache
+D:\Blazor\CsharpTest1\CsharpTest1\obj\Debug\CsharpTest1.csproj.SuggestedBindingRedirects.cache
+D:\Blazor\CsharpTest1\CsharpTest1\obj\Debug\CsharpTest1.csproj.CoreCompileInputs.cache
+D:\Blazor\CsharpTest1\CsharpTest1\obj\Debug\CsharpTest1.exe
+D:\Blazor\CsharpTest1\CsharpTest1\obj\Debug\CsharpTest1.pdb

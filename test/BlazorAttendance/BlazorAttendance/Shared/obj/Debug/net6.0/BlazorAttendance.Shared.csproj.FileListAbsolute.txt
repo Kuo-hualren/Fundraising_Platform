@@ -1,0 +1,12 @@
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\bin\Debug\net6.0\BlazorAttendance.Shared.deps.json
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\bin\Debug\net6.0\BlazorAttendance.Shared.dll
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\bin\Debug\net6.0\BlazorAttendance.Shared.pdb
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\BlazorAttendance.Shared.csproj.AssemblyReference.cache
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\BlazorAttendance.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\BlazorAttendance.Shared.AssemblyInfoInputs.cache
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\BlazorAttendance.Shared.AssemblyInfo.cs
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\BlazorAttendance.Shared.csproj.CoreCompileInputs.cache
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\BlazorAttendance.Shared.dll
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\refint\BlazorAttendance.Shared.dll
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\BlazorAttendance.Shared.pdb
+D:\Blazor\BlazorAttendance\BlazorAttendance\Shared\obj\Debug\net6.0\ref\BlazorAttendance.Shared.dll

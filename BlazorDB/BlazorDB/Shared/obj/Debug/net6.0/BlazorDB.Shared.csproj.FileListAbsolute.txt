@@ -1,0 +1,12 @@
+D:\Blazor\BlazorDB\BlazorDB\Shared\bin\Debug\net6.0\BlazorDB.Shared.deps.json
+D:\Blazor\BlazorDB\BlazorDB\Shared\bin\Debug\net6.0\BlazorDB.Shared.dll
+D:\Blazor\BlazorDB\BlazorDB\Shared\bin\Debug\net6.0\BlazorDB.Shared.pdb
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\BlazorDB.Shared.csproj.AssemblyReference.cache
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\BlazorDB.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\BlazorDB.Shared.AssemblyInfoInputs.cache
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\BlazorDB.Shared.AssemblyInfo.cs
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\BlazorDB.Shared.csproj.CoreCompileInputs.cache
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\BlazorDB.Shared.dll
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\refint\BlazorDB.Shared.dll
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\BlazorDB.Shared.pdb
+D:\Blazor\BlazorDB\BlazorDB\Shared\obj\Debug\net6.0\ref\BlazorDB.Shared.dll

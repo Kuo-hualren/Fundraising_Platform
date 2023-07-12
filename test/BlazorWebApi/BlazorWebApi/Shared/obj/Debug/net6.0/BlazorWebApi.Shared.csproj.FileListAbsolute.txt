@@ -1,0 +1,12 @@
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\bin\Debug\net6.0\BlazorWebApi.Shared.deps.json
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\bin\Debug\net6.0\BlazorWebApi.Shared.dll
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\bin\Debug\net6.0\BlazorWebApi.Shared.pdb
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\BlazorWebApi.Shared.csproj.AssemblyReference.cache
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\BlazorWebApi.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\BlazorWebApi.Shared.AssemblyInfoInputs.cache
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\BlazorWebApi.Shared.AssemblyInfo.cs
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\BlazorWebApi.Shared.csproj.CoreCompileInputs.cache
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\BlazorWebApi.Shared.dll
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\refint\BlazorWebApi.Shared.dll
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\BlazorWebApi.Shared.pdb
+D:\Blazor\BlazorWebApi\BlazorWebApi\Shared\obj\Debug\net6.0\ref\BlazorWebApi.Shared.dll

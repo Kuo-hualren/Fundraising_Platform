@@ -1,0 +1,49 @@
+﻿@page "/punchrecord"
+@inject IEmployeeService EmployeeService
+@inject NavigationManager NavigationManager
+
+<h3>PunchRecord</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>員工編號</th>
+            <th>員工姓名</th>
+            <th>日期</th>
+            <th>上班</th>
+            <th>下班</th>
+            <th>工作時數</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var rec in EmployeeService.Records)
+        {
+            <tr>
+                <td>@rec.Id</td>
+                <td>@rec.Name</td>
+                <td>@rec.Time</td>
+                <td>@rec.PunchIn</td>
+                <td>@rec.PunchOut</td>
+                <td>@rec.Hours</td>
+                <td>
+                    <button class="btn btn-primary"><i class="oi oi-pencil"></i> 打卡</button>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+<button class="btn btn-primary" @onclick="CreateNewRecord">Punch Record</button>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await EmployeeService.GetPunchRecord();
+    }
+
+    void CreateNewRecord()
+    {
+        NavigationManager.NavigateTo("/records");
+    }
+}

@@ -1,0 +1,72 @@
+﻿@page "/punch"
+
+
+<h3>打卡程式</h3>
+
+<div>
+    <label for="userId">使用者ID:</label>
+    <input id="userId" @bind="userId" />
+
+    <button @onclick="PunchIn">上班打卡</button>
+    <button @onclick="PunchOut">下班打卡</button>
+</div>
+
+@if (punchCardRecords != null && punchCardRecords.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>使用者ID</th>
+                <th>上班時間</th>
+                <th>下班時間</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var record in punchCardRecords)
+            {
+                <tr>
+                    <td>@record.UserId</td>
+                    <td>@record.PunchInTime.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                    <td>@record.PunchOutTime.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+@code {
+    public class PunchCards
+    {
+        public string UserId { get; set; }
+        public DateTime PunchInTime { get; set; }
+        public DateTime PunchOutTime { get; set; }
+    }
+
+    
+    private List<PunchCards> punchCardRecords = new List<PunchCards>();
+    private string userId;
+
+    private void PunchIn()
+    {
+        var punchCard = new PunchCards
+            {
+                UserId = userId,
+                PunchInTime = DateTime.Now
+            };
+
+        punchCardRecords.Add(punchCard);
+    }
+
+    private void PunchOut()
+    {
+        var punchCard = punchCardRecords.LastOrDefault(p => p.UserId == userId && p.PunchOutTime == default(DateTime));
+        if (punchCard != null)
+        {
+            punchCard.PunchOutTime = DateTime.Now;
+        }
+    }
+    
+
+}

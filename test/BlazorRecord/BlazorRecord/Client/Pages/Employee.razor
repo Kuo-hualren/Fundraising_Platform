@@ -1,0 +1,44 @@
+﻿@page "/employee"
+@inject IEmployeeService EmployeeService
+
+
+
+<h3>Employee</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>員工編號</th>
+            <th>員工姓名</th>
+            <th>手機號碼</th>
+            <th>信箱</th>
+            <th>職位</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var emp in EmployeeService.Employees)
+        {
+            <tr>
+                <td>@emp.Id</td>
+                <td>@emp.Name</td>
+                <td>@emp.Phone</td>
+                <td>@emp.Email</td>
+                <td>@emp.Position</td>
+                <td>
+                    <button class="btn btn-primary"><i class="oi oi-pencil"></i> 打卡</button>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+@code {
+    //<a href="/employee/{@emp.Id}"></a>
+
+    protected override async Task OnInitializedAsync()
+    {
+        await EmployeeService.GetEmployee();
+    }
+}

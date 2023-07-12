@@ -1,0 +1,12 @@
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\bin\Debug\net6.0\BlazorQRcode.Shared.deps.json
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\bin\Debug\net6.0\BlazorQRcode.Shared.dll
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\bin\Debug\net6.0\BlazorQRcode.Shared.pdb
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\BlazorQRcode.Shared.csproj.AssemblyReference.cache
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\BlazorQRcode.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\BlazorQRcode.Shared.AssemblyInfoInputs.cache
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\BlazorQRcode.Shared.AssemblyInfo.cs
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\BlazorQRcode.Shared.csproj.CoreCompileInputs.cache
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\BlazorQRcode.Shared.dll
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\refint\BlazorQRcode.Shared.dll
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\BlazorQRcode.Shared.pdb
+D:\Blazor\BlazorQRcode\BlazorQRcode\Shared\obj\Debug\net6.0\ref\BlazorQRcode.Shared.dll

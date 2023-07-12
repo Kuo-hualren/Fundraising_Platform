@@ -1,0 +1,50 @@
+﻿@page "/checkin"
+
+@inject HttpClient httpClient
+
+<h3>打卡程式</h3>
+
+@if (isCheckInSuccessful)
+{
+    <p>打卡成功！</p>
+}
+else if (isCheckInFailed)
+{
+    <p>打卡失敗！</p>
+}
+
+<button @onclick="CheckInj">打卡</button>
+
+@code {
+    bool isCheckInSuccessful = false;
+    bool isCheckInFailed = false;
+
+    async Task CheckInj()
+    {
+        try
+        {
+            // 執行打卡的相關邏輯，例如呼叫 API 或進行其他處理
+            // 在這個示例中，我們使用 HttpClient 來模擬打卡的請求
+
+            // 發送 POST 請求
+            var response = await httpClient.PostAsync("https://your-checkin-api.com/checkin", null);
+
+            // 確認打卡是否成功
+            if (response.IsSuccessStatusCode)
+            {
+                isCheckInSuccessful = true;
+                isCheckInFailed = false;
+            }
+            else
+            {
+                isCheckInSuccessful = false;
+                isCheckInFailed = true;
+            }
+        }
+        catch (Exception)
+        {
+            isCheckInSuccessful = false;
+            isCheckInFailed = true;
+        }
+    }
+}

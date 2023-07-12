@@ -1,0 +1,46 @@
+﻿@page "/"
+@inject IJSRuntime jsRuntime
+
+
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<button @onclick="CallJavaScriptFunction">呼叫 JavaScript 函式</button>
+<p>@message</p>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+
+
+@code {
+    private IJSObjectReference? module;
+
+    protected override async Task OnAfterRenderAsync(bool b)
+    {
+        // 呼叫 JavaScript 函式並取得結果
+        //message = await jsRuntime.InvokeAsync<string>("myJavaScriptFunction");
+        if (b)
+        {
+            //module = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "./wwwroot/js/Index.js");
+        }
+
+    }
+
+    private string? message { get; set; }
+    private async Task CallJavaScriptFunction() 
+    { 
+        if (module != null) 
+        { 
+            //message = await module.InvokeAsync<string>("myJavaScriptFunction"); 
+        } else
+        {
+            Console.WriteLine("fuck");
+        }
+    }
+
+
+}
